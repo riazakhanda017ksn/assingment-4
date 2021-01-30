@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Header and Menu Section-->
+    <header class="container" id="logIn-area">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a class="active" href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Booking Section-->
+    <main class="main-content container">
+        <div class="booking-form">
+            <h3>Booking Flights</h3>
+            <div class="input-group">
+                <label for="">Flying From</label>
+                <input class="inp-style" type="text" name="" placeholder="Dhaka, Bangladesh">
+            </div>
+            <div class="input-group">
+                <label for="">Flying To</label>
+                <input class="inp-style" type="text" name="" placeholder="New York, United States">
+            </div>
+            <div class="inputs">
+                <div class="input-group">
+                    <label" for="">Departure</label>
+                    <input class="inp-style" type="date" name="">
+                </div>
+                <div class="input-group">
+                    <label for="">Return</label>
+                    <input class="inp-style" type="date" name="">
+                </div>
+            </div>
+            <div class="input-group f-class">
+                <div>
+                    <label for="">First Class ($ <span id="ticket-total"> 150 </span> )</label>
+                    <input id="ticket-count" class="inp-style inp-width" type="number" name="" value="1">
+                </div>
+                <div class="plus-minus-btn">
+                    <p class="coursor"> <span class="style"   onclick="handleTotalTicket('ticket', true)">+</span>
+                     <span class="style"   onclick="handleTotalTicket('ticket' ,false)">-</span></p>
+                </div>
+            </div>
+            
+            <div class="input-group f-class">
+                <div>
+                    <label for="">Economy ( $   <span id="cheapTicket-total">100</span>   )</label>
+                    <input  id="cheapTicket-count" class="inp-style inp-width" type="number" name="" value="1">
+                </div>
+                <div class="plus-minus-btn">
+                    <p class="coursor" > <span class="style" onclick="handleTotalTicket('cheapTicket', true)">+</span> <span class="style"  onclick="handleTotalTicket('cheapTicket', false)">-</span> </p>
+                </div>
+            </div>
+            <div class="calculations">
+                <div class="amount">
+                    <div class="left">
+                        <p>Subtotal</p>
+                    </div>
+                    <div class="right">
+                        <p>  $  <span id="totalAmount">500</span> </p>
+                    </div>
+                </div>
+
+                <div class="amount">
+                    <div class="left">
+                        <p>Charge 10% VAT</p>
+                    </div>
+                    <div class="right">
+                        <p id="taxAmount">$50</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="amount">
+                    <div class="left">
+                        <h4>Total</h4>
+                    </div>
+                    <div class="right">
+                        <p id="grandTotal">$550</p>
+                    </div>
+                </div>
+            </div>
+            <button  id="button"  class="btn-style">Book Now</button>
+        </div>
+
+        <div class="booking-content">
+            <h1>discover <br> around the world</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise voluptatibus quam</p>
+        </div>
+    </section>
+
+    <section id="messageArea" class="paddingTop-bottom" >
+
+        <div class="container">
+         
+       <div class="flight-message">
+        <h4 class="user">Dear presenter</h4>
+         
+         <p class="paragraph-style"><strong class="style-color">  You have been success to go Japan
+        </strong>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore saepe temporibus impedit, cumque pariatur a aut laborum explicabo recusandae eos aspernatur exercitationem beatae error fuga sed quos veniam debitis accusantium ut! Nobis, illo asperiores doloremque accusantium officiis voluptatibus id, molestiae, omnis perferendis suscipit consequatur dolores repellat repudiandae. Repellat voluptatibus reprehenderit praesentium tenetur saepe error tempore, minima excepturi debitis, accusantium alias. Cum exercitationem ipsam amet provident, incidunt delectus error, minus nesciunt consequatur at vitae corrupti molestiae nam adipisci laudantium placeat deleniti esse totam accusamus dolorem possimus! Fugiat officia, alias distinctio id perspiciatis eligendi quasi voluptatem. Voluptates aliquid exercitationem laborum fuga aliquam quibusdam sunt magnam voluptate consectetur dolore ratione, numquam quo neque obcaecati. Repellendus ab dolor quae. Hic iure molestias unde minus in doloremque quo esse aliquam, sequi illum earum eum rem quia commodi quidem, atque odio iste dolorum accusantium. Saepe excepturi exercitationem dolorum dolores ipsa, ratione esse velit amet nulla ab atque sapiente neque unde dolore error nostrum, ut repellendus minima magni itaque! Explicabo maiores eligendi, dolorum aliquid beatae nihil nesciunt ex pariatur, cupiditate, facilis recusandae! Quod eligendi, nobis magnam officiis natus, laborum possimus amet eaque ipsum praesentium, voluptates tempore itaque sit nemo cupiditate quidem dignissimos accusantium. Dolorem quae maiores.Happy Journey Sir </p>
+
+
+        <div class="align-item">
+        <p class="style-color">The SEO OF Bangladesh Airline</p>
+        <span class="date">30-01-2020</span>
+
+        </div>
+     
+               
+       </div>
+        
+     
+        </div>
+     
+       </section>
+     
+
+
+
+
+    <!--Thank You-->
+
+<script>
+
+
+// <----------javascript-Part----------->
+
+
+    function handleTotalTicket(ticketCountNumber,isIncrease){
+
+    const ticketInput = document.getElementById(ticketCountNumber + '-count');
+
+    const ticketCount = getTicketValue(ticketCountNumber)
+
+    let ticketNewCount = ticketCount;
+
+    if (isIncrease == true) {
+
+      ticketNewCount = ticketCount + 1;
+
+    }
+    if (isIncrease == false && ticketCount > 0) {
+
+      ticketNewCount = ticketCount - 1;
+
+    }
+
+    ticketInput.value = ticketNewCount;
+    let TotalTicketCount = 0;
+    if (ticketCountNumber == 'ticket') {
+
+      TotalTicketCount = ticketNewCount * 150
+
+
+    }
+
+    if (ticketCountNumber == 'cheapTicket') {
+
+
+      TotalTicketCount = ticketNewCount * 100
+
+
+    }
+
+
+
+    document.getElementById(ticketCountNumber + "-total").innerText = TotalTicketCount;
+
+    TotalBothTicket()
+    }
+
+
+    function TotalBothTicket() {
+
+      const ticketInput = document.getElementById('ticket-count');
+
+      const ticketCount = getTicketValue('ticket')
+
+      const cheapTicketCount = getTicketValue('cheapTicket')
+
+
+      const TicketTotal = ticketCount * 150 + cheapTicketCount * 100;
+
+      document.getElementById("totalAmount").innerText = TicketTotal;
+
+      const tax = Math.round(TicketTotal * .50)
+
+      document.getElementById("taxAmount").innerText = tax;
+
+
+      const grandTotalResult = TicketTotal + tax;
+
+      document.getElementById("grandTotal").innerText = grandTotalResult;
+
+
+    }
+
+
+
+    function getTicketValue(ticketCountNumber) {
+
+      const ticketInput = document.getElementById(ticketCountNumber + '-count');
+
+      const TicketCount = parseInt(ticketInput.value);
+
+      return TicketCount
+    }
+
+
+
+// ---------------------------------> button-section-------------------------------->
+    
+const logInButton=document.getElementById("button");
+
+logInButton.addEventListener("click", function() {
+
+  const hide=document.getElementById("logIn-area");
+ hide.style.display="none";
+
+ const visible=document.getElementById("messageArea");
+
+ visible.style.display="block"
+
+
+})
+
+    </script>
+
+
+ <!--Thank You-->
+
+
+
+</body>
+
+</html>
